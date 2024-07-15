@@ -2,336 +2,337 @@ import Category from '../models/category';
 import Meal from '../models/meal';
 
 export const CATEGORIES = [
-  new Category('c1', 'Italian', '#f5428d'),
-  new Category('c2', 'Quick & Easy', '#f54242'),
-  new Category('c3', 'Hamburgers', '#f5a442'),
-  new Category('c4', 'German', '#f5d142'),
-  new Category('c5', 'Light & Lovely', '#368dff'),
-  new Category('c6', 'Exotic', '#41d95d'),
-  new Category('c7', 'Breakfast', '#9eecff'),
-  new Category('c8', 'Asian', '#b9ffb0'),
-  new Category('c9', 'French', '#ffc7ff'),
-  new Category('c10', 'Summer', '#47fced')
+  new Category('c1', '이탈리아 요리', '#f5428d'),
+  new Category('c2', '빠르고 쉬운 요리', '#f54242'),
+  new Category('c3', '햄버거', '#f5a442'),
+  new Category('c4', '독일 요리', '#f5d142'),
+  new Category('c5', '가볍고 사랑스러운 요리', '#368dff'),
+  new Category('c6', '이국적인 요리', '#41d95d'),
+  new Category('c7', '아침식사', '#9eecff'),
+  new Category('c8', '아시아 요리', '#b9ffb0'),
+  new Category('c9', '프랑스 요리', '#ffc7ff'),
+  new Category('c10', '여름 요리', '#47fced')
 ];
 
 export const MEALS = [
   new Meal(
     'm1',
     ['c1', 'c2'],
-    'Spaghetti with Tomato Sauce',
-    'affordable',
-    'simple',
+    '토마토 소스를 곁들인 스파게티',
+    '저렴한',
+    '간단한',
     'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
     20,
     [
-      '4 Tomatoes',
-      '1 Tablespoon of Olive Oil',
-      '1 Onion',
-      '250g Spaghetti',
-      'Spices',
-      'Cheese (optional)'
+      '토마토 4개',
+      '올리브 오일 1 큰술',
+      '양파 1개',
+      '스파게티 250g',
+      '향신료',
+      '치즈 (선택 사항)'
     ],
     [
-      'Cut the tomatoes and the onion into small pieces.',
-      'Boil some water - add salt to it once it boils.',
-      'Put the spaghetti into the boiling water - they should be done in about 10 to 12 minutes.',
-      'In the meantime, heaten up some olive oil and add the cut onion.',
-      'After 2 minutes, add the tomato pieces, salt, pepper and your other spices.',
-      'The sauce will be done once the spaghetti are.',
-      'Feel free to add some cheese on top of the finished dish.'
+      '토마토와 양파를 작게 자릅니다.',
+      '물을 끓이고, 끓으면 소금을 넣습니다.',
+      '스파게티를 끓는 물에 넣고 약 10~12분 동안 요리합니다.',
+      '그 동안 올리브 오일을 데우고 양파를 추가합니다.',
+      '2분 후에 토마토 조각, 소금, 후추 및 기타 향신료를 추가합니다.',
+      '스파게티가 익으면 소스도 완성됩니다.',
+      '완성된 요리에 치즈를 추가해도 좋습니다.'
     ],
     false,
     true,
     true,
     true
   ),
-
+  
   new Meal(
     'm2',
     ['c2'],
-    'Toast Hawaii',
-    'affordable',
-    'simple',
+    '토스트 하와이',
+    '저렴한',
+    '간단한',
     'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
     10,
     [
-      '1 Slice White Bread',
-      '1 Slice Ham',
-      '1 Slice Pineapple',
-      '1-2 Slices of Cheese',
-      'Butter'
+      '흰빵 한 조각',
+      '햄 한 조각',
+      '파인애플 한 조각',
+      '치즈 1~2 조각',
+      '버터'
     ],
     [
-      'Butter one side of the white bread',
-      'Layer ham, the pineapple and cheese on the white bread',
-      'Bake the toast for round about 10 minutes in the oven at 200°C'
+      '흰빵 한 면에 버터를 바릅니다.',
+      '햄, 파인애플, 치즈를 흰빵 위에 올립니다.',
+      '200°C의 오븐에서 약 10분간 구워줍니다.'
     ],
     false,
     false,
     false,
     false
   ),
-
+  
   new Meal(
     'm3',
     ['c3'],
-    'Classic Hamburger',
-    'pricey',
-    'simple',
+    '클래식 햄버거',
+    '비싼',
+    '간단한',
     'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
     45,
     [
-      '300g Cattle Hack',
-      '1 Tomato',
-      '1 Cucumber',
-      '1 Onion',
-      'Ketchup',
-      '2 Burger Buns'
+      '소고기 다짐육 300g',
+      '토마토 1개',
+      '오이 1개',
+      '양파 1개',
+      '케첩',
+      '버거 번 2개'
     ],
     [
-      'Form 2 patties',
-      'Fry the patties for c. 4 minutes on each side',
-      'Quickly fry the buns for c. 1 minute on each side',
-      'Bruch buns with ketchup',
-      'Serve burger with tomato, cucumber and onion'
+      '패티 두 개를 만듭니다.',
+      '패티를 각각 약 4분씩 굽습니다.',
+      '번을 각각 약 1분씩 빨리 굽습니다.',
+      '번에 케첩을 바릅니다.',
+      '토마토, 오이, 양파와 함께 버거를 제공합니다.'
     ],
     false,
     false,
     false,
     true
   ),
-
+  
   new Meal(
     'm4',
     ['c4'],
-    'Wiener Schnitzel',
-    'luxurious',
-    'challenging',
+    '비너 슈니첼',
+    '호화로운',
+    '도전적인',
     'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
     60,
     [
-      '8 Veal Cutlets',
-      '4 Eggs',
-      '200g Bread Crumbs',
-      '100g Flour',
-      '300ml Butter',
-      '100g Vegetable Oil',
-      'Salt',
-      'Lemon Slices'
+      '송아지 커틀릿 8개',
+      '계란 4개',
+      '빵가루 200g',
+      '밀가루 100g',
+      '버터 300ml',
+      '식물성 기름 100g',
+      '소금',
+      '레몬 슬라이스'
     ],
     [
-      'Tenderize the veal to about 2–4mm, and salt on both sides.',
-      'On a flat plate, stir the eggs briefly with a fork.',
-      'Lightly coat the cutlets in flour then dip into the egg, and finally, coat in breadcrumbs.',
-      'Heat the butter and oil in a large pan (allow the fat to get very hot) and fry the schnitzels until golden brown on both sides.',
-      'Make sure to toss the pan regularly so that the schnitzels are surrounded by oil and the crumbing becomes ‘fluffy’.',
-      'Remove, and drain on kitchen paper. Fry the parsley in the remaining oil and drain.',
-      'Place the schnitzels on awarmed plate and serve garnishedwith parsley and slices of lemon.'
+      '송아지 커틀릿을 약 2~4mm 두께로 연하게 만들고, 양쪽에 소금을 뿌립니다.',
+      '납작한 접시에 계란을 포크로 간단히 저어줍니다.',
+      '커틀릿을 밀가루에 가볍게 묻힌 후 계란에 담갔다가 마지막으로 빵가루에 묻힙니다.',
+      '버터와 기름을 큰 팬에 가열한 후 커틀릿을 양쪽이 황금빛 갈색이 될 때까지 튀깁니다.',
+      '팬을 자주 흔들어 커틀릿이 기름에 둘러싸이게 하고 빵가루가 바삭하게 만듭니다.',
+      '기름을 제거하고 키친 타월에 올려 놓습니다. 남은 기름에 파슬리를 튀겨서 물기를 제거합니다.',
+      '따뜻한 접시에 슈니첼을 놓고 파슬리와 레몬 슬라이스로 장식하여 제공합니다.'
     ],
     false,
     false,
     false,
     false
   ),
-
+  
   new Meal(
     'm5',
     ['c2', 'c5', 'c10'],
-    'Salad with Smoked Salmon',
-    'luxurious',
-    'simple',
+    '훈제 연어 샐러드',
+    '호화로운',
+    '간단한',
     'https://cdn.pixabay.com/photo/2016/10/25/13/29/smoked-salmon-salad-1768890_1280.jpg',
     15,
     [
-      'Arugula',
-      "Lamb's Lettuce",
-      'Parsley',
-      'Fennel',
-      '200g Smoked Salmon',
-      'Mustard',
-      'Balsamic Vinegar',
-      'Olive Oil',
-      'Salt and Pepper'
+      '루꼴라',
+      '양상추',
+      '파슬리',
+      '펜넬',
+      '훈제 연어 200g',
+      '머스타드',
+      '발사믹 식초',
+      '올리브 오일',
+      '소금과 후추'
     ],
     [
-      'Wash and cut salad and herbs',
-      'Dice the salmon',
-      'Process mustard, vinegar and olive oil into a dessing',
-      'Prepare the salad',
-      'Add salmon cubes and dressing'
+      '샐러드와 허브를 씻고 자릅니다.',
+      '연어를 깍둑썰기 합니다.',
+      '머스타드, 식초, 올리브 오일을 드레싱으로 만듭니다.',
+      '샐러드를 준비합니다.',
+      '연어 깍둑썰기와 드레싱을 추가합니다.'
     ],
     true,
     false,
     true,
     true
-  ),
-
+  )
+  ,
   new Meal(
     'm6',
     ['c6', 'c10'],
-    'Delicious Orange Mousse',
-    'affordable',
-    'hard',
+    '맛있는 오렌지 무스',
+    '저렴한',
+    '어려운',
     'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
     240,
     [
-      '4 Sheets of Gelatine',
-      '150ml Orange Juice',
-      '80g Sugar',
-      '300g Yoghurt',
-      '200g Cream',
-      'Orange Peel'
+      '젤라틴 시트 4장',
+      '오렌지 주스 150ml',
+      '설탕 80g',
+      '요구르트 300g',
+      '크림 200g',
+      '오렌지 껍질'
     ],
     [
-      'Dissolve gelatine in pot',
-      'Add orange juice and sugar',
-      'Take pot off the stove',
-      'Add 2 tablespoons of yoghurt',
-      'Stir gelatin under remaining yoghurt',
-      'Cool everything down in the refrigerator',
-      'Whip the cream and lift it under die orange mass',
-      'Cool down again for at least 4 hours',
-      'Serve with orange peel'
+      '냄비에 젤라틴을 녹입니다.',
+      '오렌지 주스와 설탕을 추가합니다.',
+      '냄비를 스토브에서 내립니다.',
+      '요구르트 2 큰술을 추가합니다.',
+      '남은 요구르트에 젤라틴을 저어 넣습니다.',
+      '모든 것을 냉장고에서 식힙니다.',
+      '크림을 휘핑하여 오렌지 혼합물에 넣습니다.',
+      '다시 최소 4시간 동안 식힙니다.',
+      '오렌지 껍질과 함께 제공합니다.'
     ],
     true,
     false,
     true,
     false
   ),
-
+  
   new Meal(
     'm7',
     ['c7'],
-    'Pancakes',
-    'affordable',
-    'simple',
+    '팬케이크',
+    '저렴한',
+    '간단한',
     'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
     20,
     [
-      '1 1/2 Cups all-purpose Flour',
-      '3 1/2 Teaspoons Baking Powder',
-      '1 Teaspoon Salt',
-      '1 Tablespoon White Sugar',
-      '1 1/4 cups Milk',
-      '1 Egg',
-      '3 Tablespoons Butter, melted'
+      '다목적 밀가루 1 1/2컵',
+      '베이킹 파우더 3 1/2 티스푼',
+      '소금 1 티스푼',
+      '흰 설탕 1 큰술',
+      '우유 1 1/4컵',
+      '계란 1개',
+      '녹인 버터 3 큰술'
     ],
     [
-      'In a large bowl, sift together the flour, baking powder, salt and sugar.',
-      'Make a well in the center and pour in the milk, egg and melted butter; mix until smooth.',
-      'Heat a lightly oiled griddle or frying pan over medium high heat.',
-      'Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. Brown on both sides and serve hot.'
+      '큰 그릇에 밀가루, 베이킹 파우더, 소금, 설탕을 체에 걸러 섞습니다.',
+      '가운데를 우물 모양으로 만들어 우유, 계란, 녹인 버터를 붓고 부드럽게 혼합합니다.',
+      '중간 높은 열에 살짝 기름칠한 그리들 또는 프라이팬을 가열합니다.',
+      '각 팬케이크당 약 1/4컵씩 반죽을 그리들에 붓거나 퍼서 양면이 갈색이 될 때까지 굽습니다.'
     ],
     true,
     false,
     true,
     false
   ),
-
+  
   new Meal(
     'm8',
     ['c8'],
-    'Creamy Indian Chicken Curry',
-    'pricey',
-    'challenging',
+    '크리미 인도 치킨 커리',
+    '비싼',
+    '도전적인',
     'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
     35,
     [
-      '4 Chicken Breasts',
-      '1 Onion',
-      '2 Cloves of Garlic',
-      '1 Piece of Ginger',
-      '4 Tablespoons Almonds',
-      '1 Teaspoon Cayenne Pepper',
-      '500ml Coconut Milk'
+      '닭 가슴살 4개',
+      '양파 1개',
+      '마늘 2쪽',
+      '생강 1조각',
+      '아몬드 4 큰술',
+      '카이엔 페퍼 1 티스푼',
+      '코코넛 밀크 500ml'
     ],
     [
-      'Slice and fry the chicken breast',
-      'Process onion, garlic and ginger into paste and sauté everything',
-      'Add spices and stir fry',
-      'Add chicken breast + 250ml of water and cook everything for 10 minutes',
-      'Add coconut milk',
-      'Serve with rice'
+      '닭 가슴살을 썰어 튀깁니다.',
+      '양파, 마늘, 생강을 페이스트로 만들어 모든 것을 볶습니다.',
+      '향신료를 추가하고 볶습니다.',
+      '닭 가슴살 + 물 250ml를 추가하고 모든 것을 10분 동안 요리합니다.',
+      '코코넛 밀크를 추가합니다.',
+      '밥과 함께 제공합니다.'
     ],
     true,
     false,
     false,
     true
   ),
-
   new Meal(
     'm9',
     ['c9'],
-    'Chocolate Souffle',
-    'affordable',
-    'hard',
+    '초콜릿 수플레',
+    '저렴한',
+    '어려운',
     'https://cdn.pixabay.com/photo/2014/08/07/21/07/souffle-412785_1280.jpg',
     45,
     [
-      '1 Teaspoon melted Butter',
-      '2 Tablespoons white Sugar',
-      '2 Ounces 70% dark Chocolate, broken into pieces',
-      '1 Tablespoon Butter',
-      '1 Tablespoon all-purpose Flour',
-      '4 1/3 tablespoons cold Milk',
-      '1 Pinch Salt',
-      '1 Pinch Cayenne Pepper',
-      '1 Large Egg Yolk',
-      '2 Large Egg Whites',
-      '1 Pinch Cream of Tartar',
-      '1 Tablespoon white Sugar'
+      '녹인 버터 1 티스푼',
+      '흰 설탕 2 큰술',
+      '70% 다크 초콜릿 2 온스, 조각으로 나눔',
+      '버터 1 큰술',
+      '다목적 밀가루 1 큰술',
+      '차가운 우유 4 1/3 큰술',
+      '소금 한 꼬집',
+      '카이엔 페퍼 한 꼬집',
+      '큰 계란 노른자 1개',
+      '큰 계란 흰자 2개',
+      '타르타르 크림 한 꼬집',
+      '흰 설탕 1 큰술'
     ],
     [
-      'Preheat oven to 190°C. Line a rimmed baking sheet with parchment paper.',
-      'Brush bottom and sides of 2 ramekins lightly with 1 teaspoon melted butter; cover bottom and sides right up to the rim.',
-      'Add 1 tablespoon white sugar to ramekins. Rotate ramekins until sugar coats all surfaces.',
-      'Place chocolate pieces in a metal mixing bowl.',
-      'Place bowl over a pan of about 3 cups hot water over low heat.',
-      'Melt 1 tablespoon butter in a skillet over medium heat. Sprinkle in flour. Whisk until flour is incorporated into butter and mixture thickens.',
-      'Whisk in cold milk until mixture becomes smooth and thickens. Transfer mixture to bowl with melted chocolate.',
-      'Add salt and cayenne pepper. Mix together thoroughly. Add egg yolk and mix to combine.',
-      'Leave bowl above the hot (not simmering) water to keep chocolate warm while you whip the egg whites.',
-      'Place 2 egg whites in a mixing bowl; add cream of tartar. Whisk until mixture begins to thicken and a drizzle from the whisk stays on the surface about 1 second before disappearing into the mix.',
-      'Add 1/3 of sugar and whisk in. Whisk in a bit more sugar about 15 seconds.',
-      'whisk in the rest of the sugar. Continue whisking until mixture is about as thick as shaving cream and holds soft peaks, 3 to 5 minutes.',
-      'Transfer a little less than half of egg whites to chocolate.',
-      'Mix until egg whites are thoroughly incorporated into the chocolate.',
-      'Add the rest of the egg whites; gently fold into the chocolate with a spatula, lifting from the bottom and folding over.',
-      'Stop mixing after the egg white disappears. Divide mixture between 2 prepared ramekins. Place ramekins on prepared baking sheet.',
-      'Bake in preheated oven until scuffles are puffed and have risen above the top of the rims, 12 to 15 minutes.'
+      '오븐을 190°C로 예열합니다. 가장자리가 있는 베이킹 시트에 파치먼트 종이를 깝니다.',
+      '녹인 버터 1 티스푼으로 2개의 라메킨 바닥과 측면을 가볍게 바릅니다. 라메킨의 바닥과 측면을 모두 덮습니다.',
+      '라메킨에 흰 설탕 1 큰술을 추가합니다. 라메킨을 돌려 설탕이 모든 표면을 덮도록 합니다.',
+      '초콜릿 조각을 금속 혼합 그릇에 넣습니다.',
+      '그릇을 약 3컵의 뜨거운 물이 담긴 팬 위에 낮은 열로 올려놓습니다.',
+      '중간 불로 프라이팬에 버터 1 큰술을 녹입니다. 밀가루를 뿌립니다. 버터에 밀가루가 섞여 혼합물이 걸쭉해질 때까지 휘젓습니다.',
+      '차가운 우유를 넣고 혼합물이 부드럽고 걸쭉해질 때까지 휘젓습니다. 혼합물을 녹인 초콜릿이 담긴 그릇에 옮깁니다.',
+      '소금과 카이엔 페퍼를 추가합니다. 모두 섞습니다. 계란 노른자를 추가하고 섞습니다.',
+      '초콜릿을 따뜻하게 유지하기 위해 그릇을 뜨거운 물 위에 둡니다.',
+      '계란 흰자 2개를 혼합 그릇에 넣고 타르타르 크림을 추가합니다. 혼합물이 걸쭉해지기 시작하고 휘젓을 때 약 1초 동안 표면에 남아있다가 사라질 때까지 휘젓습니다.',
+      '설탕의 1/3을 추가하고 휘젓습니다. 약 15초 동안 더 많은 설탕을 휘젓습니다.',
+      '나머지 설탕을 모두 휘젓습니다. 혼합물이 면도 크림처럼 두꺼워지고 부드러운 봉우리를 유지할 때까지 계속 휘젓습니다.',
+      '계란 흰자의 절반 정도를 초콜릿에 옮깁니다.',
+      '계란 흰자가 초콜릿에 완전히 섞일 때까지 섞습니다.',
+      '나머지 계란 흰자를 추가하고 주걱으로 부드럽게 초콜릿에 섞어줍니다.',
+      '혼합물이 완전히 섞일 때까지 섞습니다. 준비된 라메킨에 혼합물을 나눠 담습니다. 준비된 베이킹 시트에 라메킨을 놓습니다.',
+      '예열된 오븐에서 수플레가 부풀어 올라 가장자리 위로 올라올 때까지 12~15분간 굽습니다.'
     ],
     true,
     false,
     true,
     false
   ),
+  
   new Meal(
     'm10',
     ['c2', 'c5', 'c10'],
-    'Asparagus Salad with Cherry Tomatoes',
-    'luxurious',
-    'simple',
+    '아스파라거스와 체리 토마토 샐러드',
+    '호화로운',
+    '간단한',
     'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
     30,
     [
-      'White and Green Asparagus',
-      '30g Pine Nuts',
-      '300g Cherry Tomatoes',
-      'Salad',
-      'Salt, Pepper and Olive Oil'
+      '흰색과 녹색 아스파라거스',
+      '잣 30g',
+      '체리 토마토 300g',
+      '샐러드',
+      '소금, 후추, 올리브 오일'
     ],
     [
-      'Wash, peel and cut the asparagus',
-      'Cook in salted water',
-      'Salt and pepper the asparagus',
-      'Roast the pine nuts',
-      'Halve the tomatoes',
-      'Mix with asparagus, salad and dressing',
-      'Serve with Baguette'
+      '아스파라거스를 씻고, 껍질을 벗기고, 자릅니다.',
+      '소금물에서 요리합니다.',
+      '아스파라거스에 소금과 후추를 뿌립니다.',
+      '잣을 볶습니다.',
+      '토마토를 반으로 자릅니다.',
+      '아스파라거스, 샐러드, 드레싱과 섞습니다.',
+      '바게트와 함께 제공합니다.'
     ],
     true,
     true,
     true,
     true
   )
+
 ];
